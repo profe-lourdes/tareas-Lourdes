@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cooperativa de Transporte – Uyuni Bolivia</title>
+
+  <style>
+    :root {
+      --verde: #1f7a3a;
+      --amarillo: #f5c400;
+      --oscuro: #1a1a1a;
+      --claro: #f9f9f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: var(--claro);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--verde), #0f4d26);
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img {
+      width: 120px;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background-color: var(--amarillo);
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--oscuro);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url("https://images.unsplash.com/photo-1606836591695-4d58a73eba1e") center/cover no-repeat;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: auto;
+      background: rgba(0,0,0,0.5);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      color: var(--verde);
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      border-left: 6px solid var(--amarillo);
+      padding-left: 10px;
+    }
+
+    .servicios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .ubicacion {
+      background-color: #eef6f0;
+      border-radius: 12px;
+      padding: 30px;
+    }
+
+    footer {
+      background-color: var(--oscuro);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer span {
+      color: var(--amarillo);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <img src="logo.png" alt="Logotipo de la Cooperativa">
+    <div>
+      <h1>Cooperativa de Transporte Pesado</h1>
+      <p>Servicio Nacional e Internacional – Uyuni, Potosí, Bolivia</p>
+    </div>
+  </header>
+
+  <!-- MENÚ -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#flota">Flota</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <h2>Conectando Bolivia con el mundo</h2>
+    <p>
+      Somos una cooperativa de transporte pesado que opera desde el Salar de Uyuni,
+      ofreciendo servicios confiables de carga nacional e internacional.
+    </p>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <h3>Nuestros Servicios</h3>
+    <div class="servicios">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7" alt="Transporte Nacional">
+        <h4>Transporte Nacional</h4>
+        <p>Distribución segura y eficiente en todo el territorio boliviano.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8" alt="Transporte Internacional">
+        <h4>Transporte Internacional</h4>
+        <p>Conectamos Bolivia con países vecinos mediante rutas estratégicas.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8" alt="Carga Pesada">
+        <h4>Carga Pesada</h4>
+        <p>Especialistas en trailers, volquetas y ramplas de alto tonelaje.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOTA -->
+  <section id="flota">
+    <h3>Nuestra Flota</h3>
+    <p>
+      Contamos con una moderna flota de trailers, volquetas y ramplas,
+      operando en condiciones extremas como el Salar de Uyuni,
+      garantizando seguridad, puntualidad y experiencia.
+    </p>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion">
+    <h3>Ubicación</h3>
+    <div class="ubicacion">
+      <p>
+        📍 <strong>Uyuni – Departamento de Potosí – Estado Plurinacional de Bolivia</strong><br>
+        Punto estratégico para el comercio nacional e internacional.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h3>Contacto</h3>
+    <p>
+      📞 Teléfono: +591 XXX XXXX<br>
+      📧 Email: contacto@cooperativatransporte.com<br>
+      🌐 Operando 24/7
+    </p>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>
+      © 2025 <span>Cooperativa de Transporte Pesado</span> – Uyuni Bolivia<br>
+      Todos los derechos reservados
+    </p>
+  </footer>
+
+</body>
+</html>
